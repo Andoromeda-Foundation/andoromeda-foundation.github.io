@@ -5,9 +5,14 @@ function resize() {
     var splitHeight = 587 * $('.banner').width() / 1855;
     $('.split').css('margin-top', -splitHeight);
     $('.split').css('border-width', '0 0 ' + splitHeight.toFixed(3) + 'px ' + $('.banner').width() + 'px');
-    $('.circle-right').height($('.circle-width-dot').height());
     var zoom = $('.circle-width-dot').height() / 4.0 / 160.0;
-    $('.circle-item').css('zoom', zoom);
+    if ($(window).width() > 992) {
+        $('.circle-item').css('zoom', $(window).width() > 992 ? zoom : 1);
+        $('.circle-right').height($('.circle-width-dot').height());
+    } else {
+        $('.circle-item').css('zoom', 1);
+        $('.circle-right').height("auto");
+    }
     $('.hotspot').height(25 * $('.circle-width-dot').height() / 936);
     $('.hotspot').width(25 * $('.circle-width-dot').height() / 936);
     var offset = $('.circle-width-dot').offset();
