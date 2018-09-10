@@ -543,6 +543,19 @@ a:hover {
     .circle-width-dot {
         display: none;
     }
+
+    .case2-texture {
+        display: none;
+    }
+
+    .case2-texture-split {
+        display: none;
+    }
+
+    .case2-text {
+        width: 100%;
+        overflow-y: auto;
+    }
 }
 
 @media (max-width: 721px) {
