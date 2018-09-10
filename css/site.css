@@ -556,6 +556,20 @@ a:hover {
         width: 100%;
         overflow-y: auto;
     }
+
+    .circle-item {
+        padding-left: 0;
+    }
+
+    .circle-text {
+        width: calc(100% - 130px);
+        margin-left: 15px;
+    }
+
+    .circle-text-title, .circle-text-subtitle {
+        line-height: 25px;
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 721px) {
