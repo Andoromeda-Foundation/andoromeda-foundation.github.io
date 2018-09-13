@@ -42,4 +42,5 @@ $(document).ready(function() {
         resize();
     });
     resize();
+    setInterval(function () { resize(); }, 1000);
 });
